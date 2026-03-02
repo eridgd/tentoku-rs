@@ -1,0 +1,31 @@
+[package]
+name = "tentoku"
+version = "0.1.0"
+edition = "2021"
+description = "Japanese text tokenizer with deinflection support"
+license = "GPL-3.0-or-later"
+homepage = "https://github.com/eridgd/tentoku-rs"
+repository = "https://github.com/eridgd/tentoku-rs"
+documentation = "https://docs.rs/tentoku"
+
+[lib]
+crate-type = ["lib", "cdylib", "staticlib"]
+
+[dependencies]
+thiserror = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+unicode-normalization = "0.1"
+rusqlite = { version = "0.32", features = ["bundled"] }
+quick-xml = "0.37"
+ureq = "3"
+flate2 = "1"
+clap = { version = "4", features = ["derive"] }
+
+[dev-dependencies]
+criterion = { version = "0.5", features = ["html_reports"] }
+tempfile = "3"
+
+[[bench]]
+name = "tokenize"
+harness = false

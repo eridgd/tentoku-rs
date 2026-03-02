@@ -6,6 +6,10 @@
 
 **A dictionary-driven Japanese tokenizer with built-in deinflection, ported to Rust.**
 
+[![Crates.io](https://img.shields.io/crates/v/tentoku)](https://crates.io/crates/tentoku)
+[![docs.rs](https://img.shields.io/docsrs/tentoku)](https://docs.rs/tentoku)
+[![CI](https://github.com/eridgd/tentoku-rs/actions/workflows/ci.yml/badge.svg)](https://github.com/eridgd/tentoku-rs/actions)
+[![MSRV](https://img.shields.io/badge/rustc-1.70+-blue)](https://www.rust-lang.org/)
 [![License](https://img.shields.io/badge/license-GPL--3.0--or--later-blue.svg)](LICENSE)
 
 [日本語版 README](README.ja.md)
